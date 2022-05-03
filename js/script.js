@@ -61,6 +61,17 @@ const app = new Vue({
             console.log(this.counter);
 
         },
-    }
+    },
+
+    mounted() {
+        setInterval(() => {
+            this.counter++
+            if(this.counter > this.slides.length - 1){
+                this.counter = 0;
+            }
+        }, 3000);
+        
+    },
+
 
 })
