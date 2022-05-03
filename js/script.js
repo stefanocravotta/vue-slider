@@ -55,6 +55,12 @@ const app = new Vue({
             }
             console.log(this.counter);
         },
-    },
+        thisThumb(index){
+
+            this.counter = index;
+            console.log(this.counter);
+
+        },
+    }
 
 })
